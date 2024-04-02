@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = [1,2,'a',6,7];
+        let arr2 = ['b','hai'];
+
+        function arr(ar1,ar2,index){
+            for(let i=0;i<ar2.length;i++){
+                ar1.splice(index,0,ar2[i]);
+                index++;
+            }
+
+            return ar1
+        }
+
+        console.log(arr(arr1,arr2,2));
+    </script>
+</body>
+</html>

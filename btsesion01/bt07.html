@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [4,6,8,2,9];
+
+        function filterArr(arr,number){
+            let newArr = arr.filter((item,index,arr)=>{
+                return item <=  number
+            })
+
+            let maxNumber = newArr[0];
+            for(let j=1;j<newArr.lenght;j++){
+                if(newArr[i] > maxNumber){
+                    maxNumber = newArr[i];
+                }
+            }
+            return maxNumber;
+        }
+
+        console.log(filterArr(numbers,7))
+    </script>
+</body>
+</html>

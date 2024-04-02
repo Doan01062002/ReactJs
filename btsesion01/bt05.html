@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users = [
+            {
+                userName: "đoan",
+                password:"12345"
+            },
+            {
+                userName: "hoàng",
+                password:"12345"
+            },
+            {
+                userName: "vỹ",
+                password:"12 345"
+            },
+
+        ];
+
+        let result = users.findIndex((item,index,arr)=>{
+            for(let i=0; i<item.password.length; i++){
+                if(item.password[i] == " "){
+                    return index
+                }
+            }
+        })
+
+        if(result == -1){
+            console.log("tất cả tài khoản đểu thảo mãn")
+        }else{
+            console.log(result);
+        }
+        
+    </script>
+</body>
+</html>
