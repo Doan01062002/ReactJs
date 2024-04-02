@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hasUppercase(string){
+            return Array.from(string).some((item,index,arr)=>{
+                return item === item.toUpperCase();
+            })
+        }
+
+        console.log(hasUppercase("Hello"));
+        console.log(hasUppercase("hello"));
+    </script>
+</body>
+</html>
