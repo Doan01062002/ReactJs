@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function arrShared(...arr){
+            let bigArr = [];
+
+            for(let i=0;i<arr[0].length;i++){
+                let miniArr = [];
+                for(let j=0;j<arr.length;j++){
+                    miniArr.push(arr[j][i])
+                }
+                bigArr.push(miniArr)
+            }
+            
+            return bigArr
+
+        }
+
+        console.log(arrShared([1,2,3],['a','b','c'],[true,false,true]))
+    </script>
+</body>
+</html>

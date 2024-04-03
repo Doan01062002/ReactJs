@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- kết quả trả về bên trong vòng lặp là 0,1,2,3,4
+    ngoài vòng lặp trả về lỗi: i is not defined ==> tức là phạm vi hoạt động của let chỉ có thể hoạt động trong vòng lặp -->
+    <script>
+        for(let i=0;i<5;i++){
+            console.log("trong vòng lặp:", i)
+        };
+
+        console.log("ngoài vòng lặp for:",i);
+    </script>
+</body>
+</html>
