@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <h1>Feedback Coach</h1>
+    <div class="feedback">
+        <br>
+        <h3>Thầy dậy anh em có hay không</h3>
+        <br>
+        <div>
+            <div class="point-row">
+                <button class="point" value="1">1</button>
+                <button class="point" value="2">2</button>
+                <button class="point" value="3">3</button>
+                <button class="point" value="4">4</button>
+                <button class="point" value="5">5</button>
+                <button class="point" value="6">6</button>
+                <button class="point" value="7">7</button>
+                <button class="point" value="8">8</button>
+                <button class="point" value="9">9</button>
+                <button class="point" value="10">10</button>
+            </div>
+            <br>
+            <input class="inputReview" id="inputReview" type="text" placeholder="Write a review">
+            <button id="sendButton" class="buttonSend" onclick="sendFeedback()">Send</button>
+        </div>
+        <br>
+        <div class="renderFeedback" id="renderFeedback">
+            <div class="action-col">
+                <div class="action-row">
+                    <button class="point" style="background-color: rgb(240, 97, 233);">10</button>
+                    <div class="action">
+                    <span class="material-symbols-outlined">edit_square</span>
+                    <span class="material-symbols-outlined">close</span>
+                    </div>
+                </div>
+                <p style="margin-left: 50px;">11 đỉm</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
